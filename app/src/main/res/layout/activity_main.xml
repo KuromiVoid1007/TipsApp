@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Ввод суммы заказа -->
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите сумму заказа"
+        android:inputType="numberDecimal"/>
+
+    <!-- Процент чаевых -->
+    <TextView
+        android:id="@+id/textTipPercent"
+        android:layout_below="@id/editTextAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Процент чаевых: 15%"
+        android:layout_centerHorizontal="true"/>
+
+    <SeekBar
+        android:id="@+id/seekBarTip"
+        android:layout_below="@id/textTipPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progress="15"/>
+
+    <!-- Количество участников -->
+    <EditText
+        android:id="@+id/editTextPeople"
+        android:layout_below="@id/seekBarTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Количество участников"
+        android:inputType="number"/>
+
+    <!-- Итоговая сумма -->
+    <TextView
+        android:id="@+id/textTotalAmount"
+        android:layout_below="@id/editTextPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Итоговая сумма: 0.0"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Сумма на одного человека -->
+    <TextView
+        android:id="@+id/textPerPersonAmount"
+        android:layout_below="@id/textTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="На одного человека: 0.0"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Кнопка очистки -->
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_below="@id/textPerPersonAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Очистить"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+
+
