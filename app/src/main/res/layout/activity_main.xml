@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="200dp"
     android:padding="16dp">
 
     <!-- Ввод суммы заказа -->
+
+
     <EditText
         android:id="@+id/editTextAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите сумму заказа"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal" />
+
+
 
     <!-- Процент чаевых -->
     <TextView
@@ -65,6 +71,8 @@
         android:layout_height="wrap_content"
         android:text="Очистить"
         android:layout_centerHorizontal="true"/>
+
+
 </RelativeLayout>
 
 

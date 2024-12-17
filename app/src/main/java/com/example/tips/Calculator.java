@@ -13,5 +13,4 @@ public class Calculator {
     public static double calculatePerPerson(double totalAmount, int peopleCount) {
         return totalAmount / peopleCount;
     }
-
 }
